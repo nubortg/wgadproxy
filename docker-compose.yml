@@ -25,7 +25,7 @@ services:
     ports:
       - "8080:3128"
     volumes:
-      - ./squid.conf:/etc/squid/squid.conf
+      - ./squid/squid.conf:/etc/squid/squid.conf
     restart: always
     networks:
       private_network:
@@ -86,7 +86,7 @@ services:
       - TZ=America/Los_Angeles
     volumes:
       - ./work:/opt/adguardhome/work
-      - ./conf:/opt/adguardhome/conf
+      - ./adguard:/opt/adguardhome/conf
     networks:
       private_network:
         ipv4_address: 10.2.0.100
