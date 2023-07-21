@@ -85,8 +85,8 @@ services:
     environment:
       - TZ=America/Los_Angeles
     volumes:
-      - ./work:/opt/adguardhome/work
-      - ./adguard:/opt/adguardhome/conf
+      - ./adguard/work:/opt/adguardhome/work
+      - ./adguard/conf:/opt/adguardhome/conf
     networks:
       private_network:
         ipv4_address: 10.2.0.100
