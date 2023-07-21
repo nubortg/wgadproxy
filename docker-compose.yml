@@ -12,7 +12,8 @@ services:
   nginx:
      container_name: nginx
      volumes:
-       - ./wl.pac:/usr/share/nginx/html/wl.pac:ro
+       - ./nginx/www:/usr/share/nginx/html:ro
+       - ./nginx/nginx.conf:/etc/nginx/nginx.conf:ro
      image: nginx
      networks:
        private_network:
