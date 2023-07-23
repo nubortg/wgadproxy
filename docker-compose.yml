@@ -12,7 +12,7 @@ services:
   nginx:
      container_name: nginx
      volumes:
-       - ./nginx/www:/var/www/html:ro
+       - ./nginx/www:/var/www/html
        - ./nginx/conf.d/default.conf:/etc/nginx/conf.d/default.conf:ro
        - ./nginx/php-fpm.d/www.conf:/etc/php81/php-fpm.d/www.conf:ro
      image: "trafex/php-nginx:3.1.0"
