@@ -1,6 +1,6 @@
 <?php
 // Указываем путь к файлу "whitelist.conf"
-$whitelistFile = 'whitelist.conf';
+$whitelistFile = 'sites.list';
 
 // Читаем содержимое файла "whitelist.conf" в массив
 $whitelistDomains = file($whitelistFile, FILE_IGNORE_NEW_LINES | FILE_SKIP_EMPTY_LINES);
